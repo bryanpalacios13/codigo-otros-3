@@ -29,7 +29,7 @@ for (let i = 0; i < productos.length; i++) {
   li.appendChild(d)
 }
 
-// displayProductos(productos)
+// displayProductos(productos)  Se comento esta función, ya que no se puede llamar una función que no existe
 const botonDeFiltro = document.querySelector("button");
 
 botonDeFiltro.onclick = function() {
