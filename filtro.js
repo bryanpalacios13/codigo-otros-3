@@ -6,10 +6,11 @@ const productos = [
   {nombre: "Bota negra", tipo: "bota", color: "negro", img: "./bota-negra.jpg"},
   {nombre: "Bota azul", tipo: "bota", color: "azul", img: "./bota-azul.jpg"},
   {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "./zapato-rojo.jpg"}
-]
+];
+console.log(productos);
 
-const li = document.getElementsByName("lista-de-productos")
-const $i = document.querySelector('.input');
+const li = document.getElementById("lista-de-productos"); // Estaba llamando un ID con el método .getElementByName 
+const $i = document.querySelector("input");
 
 for (let i = 0; i < productos.length; i++) {
   var d = document.createElement("div")
@@ -28,7 +29,7 @@ for (let i = 0; i < productos.length; i++) {
   li.appendChild(d)
 }
 
-displayProductos(productos)
+// displayProductos(productos)
 const botonDeFiltro = document.querySelector("button");
 
 botonDeFiltro.onclick = function() {
